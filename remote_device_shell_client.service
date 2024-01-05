@@ -1,0 +1,9 @@
+[Unit]
+Description=Remote Device Shell Client Service
+After=network.target
+[Service]
+ExecStart=<path_to_python> <path_to_remote_device_shell_client.py>
+Type=simple
+User=<unix_user_name>
+[Install]
+WantedBy=default.target
